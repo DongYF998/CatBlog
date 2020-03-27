@@ -26,8 +26,6 @@ public class UserServiceImpl implements UserService {
             throw new UserException(CommonExceptionEnum.PASSWORD_EMPTY);
         }
         User compare = userDao.getUser(uid);
-        System.out.println(compare);
-        System.out.println(pwd);
         if (!compare.getPwd().equals(pwd)){
             throw new UserException(CommonExceptionEnum.PASSWORD_ERR);
         }

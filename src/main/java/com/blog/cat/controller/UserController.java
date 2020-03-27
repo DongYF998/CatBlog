@@ -1,9 +1,5 @@
 package com.blog.cat.controller;
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.JWTVerifier;
-import com.auth0.jwt.algorithms.Algorithm;
-import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.blog.cat.annotation.NormalToken;
 import com.blog.cat.annotation.PassToken;
 import com.blog.cat.common.exception.CommonExceptionEnum;
@@ -16,7 +12,6 @@ import com.blog.cat.service.UserService;
 import com.blog.cat.util.EmailUtil;
 import com.blog.cat.util.RedisUtil;
 import com.blog.cat.util.TokenUtil;
-import org.aspectj.lang.annotation.Around;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -183,13 +178,10 @@ public class UserController extends BaseController {
     }
 
 
-    /* 登陆后个人信息操作 */
-
     @NormalToken
     @PostMapping("/uploadHeadPic")
     public CommonReturnType uploadHeadPic(@RequestBody MultipartFile file){
-
-        return new CommonReturnType("上次成功");
+        return new CommonReturnType("上传成功");
     }
 
 

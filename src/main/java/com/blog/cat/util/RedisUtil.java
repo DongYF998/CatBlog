@@ -15,7 +15,6 @@ import java.util.concurrent.TimeUnit;
  * @ClassName: RedisUtil
  * @Author: Yangyang
  * @Date: 2019/6/18
- * @Description: TODO
  */
 
 @Component

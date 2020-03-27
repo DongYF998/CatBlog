@@ -3,14 +3,32 @@
   <component name="AnalysisUIOptions">
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/blog/cat/service/UserService.java" description="Integer register(User user) throws  UserException;" line="22" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4216d4-ea61-4e17-858d-ad4427d84872" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="7f4216d4-ea61-4e17-858d-ad4427d84872" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/RedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CatBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CatBlog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/AdminToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/AdminToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/NormalToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/NormalToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/PassToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/PassToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CatBlog.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/aspect/HttpAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/aspect/HttpAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/util/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/util/RedisUtil.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,91 +54,17 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/util/EmailUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="188" column="4" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/util/TokenUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="FxmlFile" />
         <option value="JUnit4 Test Class" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -136,168 +80,33 @@
       <replace />
     </replaceStrings>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/entity/user/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/CatApplication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/blog/cat/dao/UserDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/NormalToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/AdminToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/UserException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/common/type/CommonReturnType.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/WEB-INF/login.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/dao/Solution.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/blog/cat/util/EmailUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/util/EmailUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index'.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/html/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/html/c.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/config/InterceptorConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/PassToken.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/html/login.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/register.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/login.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/register.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/html/register.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/CommonExceptionEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/d.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/d.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/view/UserView.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/util/TokenUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="155" />
-    <option name="y" value="260" />
-    <option name="width" value="765" />
-    <option name="height" value="850" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Program Files/Apache/maven3.6.3" />
+        <option name="userSettingsFile" value="D:\Program Files\Apache\maven3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="CatdeaLogs" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="intercepter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CatBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CatBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1WKZERu7Zd7fHE5TeIRq5tkI0eO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -305,18 +114,19 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/抽奖程序/LuckDraw" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/资料接口框架/userDataSyn" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
@@ -343,18 +153,6 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="？" />
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CatApplication">
@@ -431,6 +229,18 @@
         <item itemvalue="JUnit.UserDaoTest.getUser" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -509,6 +319,12 @@
       <workItem from="1578533965474" duration="7502000" />
       <workItem from="1578627956463" duration="1280000" />
       <workItem from="1578658469591" duration="1461000" />
+      <workItem from="1578900137235" duration="1347000" />
+      <workItem from="1578906386499" duration="1312000" />
+      <workItem from="1580809180190" duration="610000" />
+      <workItem from="1581848566179" duration="162000" />
+      <workItem from="1585215348757" duration="1092000" />
+      <workItem from="1585271633141" duration="7153000" />
     </task>
     <servers />
   </component>
@@ -544,499 +360,90 @@
       <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198228000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.19189766" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info id="JRebel" order="8" sideWeight="0.5010395" side_tool="true" weight="0.1816354" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.35285914" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4966488" weight="0.45746166" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32775453" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32775453" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290461" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4155496" side_tool="true" weight="0.10055866" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3290461" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.5844504" weight="0.40725243" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.45509383" side_tool="true" weight="0.44072524" />
-      <window_info anchor="bottom" id="Run" order="16" sideWeight="0.5033512" side_tool="true" visible="true" weight="0.35476956" />
-      <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.38633195" />
-      <window_info anchor="bottom" id="Problems" order="18" sideWeight="0.49798927" weight="0.32775453" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
-      <window_info anchor="right" id="JRebel Setup Guide" order="10" weight="0.3297587" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.22117962" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info id="JRebel" order="8" sideWeight="0.5010395" side_tool="true" weight="0.1816354" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.35285914" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.39888424" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.3290461" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290461" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.4155496" side_tool="true" weight="0.10055866" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3290461" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Problems" order="14" sideWeight="0.4989339" weight="0.32832617" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" sideWeight="0.5844504" weight="0.40725243" />
-      <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.45509383" side_tool="true" weight="0.44072524" />
-      <window_info active="true" anchor="bottom" id="Run" order="17" sideWeight="0.5010661" side_tool="true" visible="true" weight="0.34449095" />
-      <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.38633195" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
-      <window_info anchor="right" id="JRebel Setup Guide" order="10" weight="0.3297587" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="818" y="218" key="FileChooserDialogImpl" timestamp="1581848627322">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="818" y="218" key="FileChooserDialogImpl/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1581848627322" />
+    <state x="654" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578906713082" />
+    <state width="1493" height="268" key="GridCell.Tab.0.bottom" timestamp="1585277631359">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
+    <state width="1493" height="268" key="GridCell.Tab.0.center" timestamp="1585277631359">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
+    <state width="1493" height="268" key="GridCell.Tab.0.left" timestamp="1585277631359">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
+    <state width="1493" height="268" key="GridCell.Tab.0.right" timestamp="1585277631359">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
+    <state width="1493" height="268" key="GridCell.Tab.1.bottom" timestamp="1585277631360">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
+    <state width="1493" height="268" key="GridCell.Tab.1.center" timestamp="1585277631360">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
+    <state width="1493" height="268" key="GridCell.Tab.1.left" timestamp="1585277631360">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
+    <state width="1493" height="268" key="GridCell.Tab.1.right" timestamp="1585277631360">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="268" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
+    <state width="1493" height="237" key="GridCell.Tab.2.bottom" timestamp="1585277286372">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="237" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585277286372" />
+    <state width="1493" height="237" key="GridCell.Tab.2.center" timestamp="1585277286370">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="237" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1585277286370" />
+    <state width="1493" height="237" key="GridCell.Tab.2.left" timestamp="1585277286370">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="237" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1585277286370" />
+    <state width="1493" height="237" key="GridCell.Tab.2.right" timestamp="1585277286371">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="237" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1585277286371" />
+    <state x="270" y="0" width="1207" height="834" key="SettingsEditor" timestamp="1585215656974">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="0" width="1207" height="834" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585215656974" />
+    <state x="449" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1585271636828">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="561" y="305" key="com.intellij.ide.util.TipDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1581848568780" />
+    <state x="449" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1585271636828" />
+    <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578900144088">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1578900144088" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585274649340">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1585274649340" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="1" />
+          <line>36</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/miao-register.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/WEB-INF/login.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/dao/Solution.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE.jar!/org/springframework/data/redis/connection/DefaultStringRedisConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-623">
-          <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
-          <folding>
-            <element signature="e#3926#3927#0" expanded="true" />
-            <element signature="e#3984#3985#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.10.RELEASE/spring-data-redis-2.1.10.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/blog/cat/util/EmailUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index'.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/c.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/css/amazeui.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/config/WebMvcConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-3.1.1.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/common/type/CommonReturnType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="5618" column="4" selection-start-line="5618" selection-start-column="4" selection-end-line="5618" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="564" column="22" selection-start-line="564" selection-start-column="22" selection-end-line="564" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/layui/css/layui.css" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="137" column="27" selection-start-line="137" selection-start-column="26" selection-end-line="137" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/AdminToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/NormalToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/PassToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1814">
-          <caret line="591" lean-forward="true" selection-start-line="591" selection-end-line="591" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/register.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/register.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/CatApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect4.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/config/InterceptorConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/login.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/1-03.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/register.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/html/login.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/d.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/controller/view/UserView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="62" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/CommonExceptionEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/util/EmailUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="62" column="54" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/util/TokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="188" column="4" selection-start-line="188" selection-start-column="4" selection-end-line="188" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

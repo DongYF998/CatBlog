@@ -32,8 +32,6 @@ public class HttpAspect {
 
     }
 
-
-
     @Around("httpCut()")
     public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
         RequestAttributes ra = RequestContextHolder.getRequestAttributes();
@@ -44,6 +42,8 @@ public class HttpAspect {
         String url = request.getRequestURL().toString();
         String params = "";
         Object[] o = pjp.getArgs();
+        String ctrlClassName = pjp.getTarget().getClass().getSimpleName();
+        String ctrlMethod = pjp.getSignature().getName();
         if (GET.equals(method)){
             params = request.getQueryString();
         }else {
@@ -53,11 +53,8 @@ public class HttpAspect {
             }
             params+="]";
         }
-        logger.info("url:{}, method:{}, params:{} " ,url, method, params);
+        logger.info("ctrlClassName:{}, ctrlMethod:{} ,url:{}, method:{}, params:{} ",ctrlClassName, ctrlMethod,url, method, params);
         Object result = pjp.proceed();
         return result;
-
     }
-
-
 }
