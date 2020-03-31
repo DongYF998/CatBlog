@@ -8,6 +8,7 @@ import com.blog.cat.common.type.CommonReturnType;
 import com.blog.cat.controller.view.UserView;
 import com.blog.cat.dao.UserDao;
 import com.blog.cat.entity.User;
+import com.blog.cat.service.RedisService;
 import com.blog.cat.service.UserService;
 import com.blog.cat.util.EmailUtil;
 import com.blog.cat.util.RedisUtil;
@@ -31,38 +32,36 @@ import java.util.regex.Pattern;
 @CrossOrigin
 public class UserController extends BaseController {
 
-    @Autowired
     private UserService userService;
 
-    @Autowired
+    private RedisService redisService;
+
     private UserDao userDao;
 
-    @Autowired
     private TokenUtil tokenUtil;
 
-    @Autowired
     private RedisUtil redisUtil;
 
-    @Autowired
     private EmailUtil emailUtil;
 
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    private static Pattern USERNAME_PATTERN = Pattern.compile("^[a-z]\\d{6,13}");
+    private static final Pattern USERNAME_PATTERN = Pattern.compile("^[a-z]\\d{6,13}");
 
-    private static Pattern PWD_PATTERN = Pattern.compile("^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$");
+    private static final Pattern PWD_PATTERN = Pattern.compile("^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$");
 
-    private static Pattern NICKNAME_PATTERN = Pattern.compile("\\s+");
+    private static final Pattern NICKNAME_PATTERN = Pattern.compile("\\s+");
 
-    private static Pattern EMAIL_PATTERN = Pattern.compile("^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$");
+    private static final Pattern EMAIL_PATTERN = Pattern.compile("^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$");
 
 
     @PassToken
     @PostMapping("/login")
-    public CommonReturnType login(@RequestBody User user) throws UserException {
+    public CommonReturnType login(@RequestBody User user) throws Exception {
         User result = userService.login(user.getUid(), user.getPwd());
         String token = tokenUtil.getToken(user);
-        redisUtil.setRedisWithTimeOut("token", result.getUid(), token, 1000 * 60 * 60 * 3);
+//        redisUtil.setRedisWithTimeOut("token", result.getUid(), token, 1000 * 60 * 60 * 3);
+        redisService.setToken(result.getUid(), token, 1000 * 60 * 60 * 3);
         Map<String, String> reData = new HashMap<>(2);
         reData.put("token", token);
         return new CommonReturnType(reData);
@@ -74,7 +73,7 @@ public class UserController extends BaseController {
         String verifyCode = view.getVerifyCode();
         String email = view.getEmail();
         String REDIS_KEY = "email";
-        if ( !redisUtil.getKey(REDIS_KEY, email).equals(verifyCode)) {
+        if ( !redisService.getKey(REDIS_KEY, email).equals(verifyCode)) {
             throw new UserException(CommonExceptionEnum.EMAIL_CODE_ERR);
         }
         Integer result = userService.register(userViewToUser(view));
@@ -159,7 +158,7 @@ public class UserController extends BaseController {
         int random = r.nextInt(999999);
         logger.info(email);
         String verifyCode = random > 100000 ? String.valueOf(random) : String.valueOf(random + 100000);
-        redisUtil.setRedisWithTimeOut("email", email, verifyCode, 1000 * 60 * 15);
+        redisService.setEmailVerify(email, verifyCode, 1000*60*15);
         try {
             emailUtil.sendMail(email, verifyCode);
         } catch (Exception e) {
@@ -194,4 +193,33 @@ public class UserController extends BaseController {
         return dest;
     }
 
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
+    @Autowired
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
+    @Autowired
+    public void setTokenUtil(TokenUtil tokenUtil) {
+        this.tokenUtil = tokenUtil;
+    }
+
+    @Autowired
+    public void setRedisUtil(RedisUtil redisUtil) {
+        this.redisUtil = redisUtil;
+    }
+
+    @Autowired
+    public void setEmailUtil(EmailUtil emailUtil) {
+        this.emailUtil = emailUtil;
+    }
+
+    @Autowired
+    public void setRedisService(RedisService redisService) {
+        this.redisService = redisService;
+    }
 }

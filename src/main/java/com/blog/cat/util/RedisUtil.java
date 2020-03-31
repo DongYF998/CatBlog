@@ -33,7 +33,7 @@ public class RedisUtil {
      * @return boolean true: 存入成功;
      * @throws UserException .REDIS_SERVER_ERR 存入失败
      */
-    public boolean setRedisWithTimeOut(String flag,String key, String value, long timeout) throws UserException {
+    public boolean setRedisWithTimeOut(String flag, String key, String value, long timeout) throws UserException {
         try {
             template.opsForValue().set( flag+":"+key,value,timeout,TimeUnit.MILLISECONDS);
             return true;
@@ -54,7 +54,7 @@ public class RedisUtil {
      * @return String token
      * @throws Exception
      */
-    public String getKey(String flag,String key)throws Exception{
+    public String getKey(String flag,String key) throws Exception{
         String val= template.opsForValue().get( flag+":"+key);
         return val == null? "": val;
     }

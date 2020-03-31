@@ -1,6 +1,5 @@
 package com.blog.cat.service.impl;
 
-import com.blog.cat.common.exception.CommonException;
 import com.blog.cat.common.exception.CommonExceptionEnum;
 import com.blog.cat.common.exception.UserException;
 import com.blog.cat.dao.UserDao;
@@ -10,11 +9,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+/**
+ * @author Yangyang
+ */
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
     private UserDao userDao;
+
+    @Autowired
+    public void setUserDao(UserDao userDao){
+        this.userDao = userDao;
+    }
 
     @Override
     public User login(String uid, String pwd) throws UserException {

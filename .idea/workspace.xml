@@ -4,30 +4,18 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4216d4-ea61-4e17-858d-ad4427d84872" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7f4216d4-ea61-4e17-858d-ad4427d84872" name="Default Changelist" comment="测试测试测试">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/RedisServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CatBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CatBlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/AdminToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/AdminToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/NormalToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/NormalToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/PassToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/annotation/PassToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/UserException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/RedisService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CatBlog.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/aspect/HttpAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/aspect/HttpAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/TokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/common/exception/UserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/common/exception/UserException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/intercepter/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/intercepter/AuthInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/util/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/util/RedisUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +51,8 @@
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,7 +107,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/资料接口框架/userDataSyn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lambda" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -324,83 +312,74 @@
       <workItem from="1580809180190" duration="610000" />
       <workItem from="1581848566179" duration="162000" />
       <workItem from="1585215348757" duration="1092000" />
-      <workItem from="1585271633141" duration="7153000" />
+      <workItem from="1585271633141" duration="18573000" />
+      <workItem from="1585467445675" duration="2329000" />
+      <workItem from="1585551170230" duration="472000" />
+      <workItem from="1585635782595" duration="1253000" />
     </task>
+    <task id="LOCAL-00001" summary="测试测试测试">
+      <created>1585279157481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585279157481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="UserDaoTest_getUser - 2019.10.21 at 14h 26m 01s.xml">
-      <configuration name="UserDaoTest.getUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_getUser - 2019.10.21 at 14h 26m 09s.xml">
-      <configuration name="UserDaoTest.getUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserDaoTest_getUser - 2019.10.21 at 14h 27m 50s.xml">
-      <configuration name="UserDaoTest.getUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmailUtilTest_sendMail - 2019.11.14 at 14h 32m 38s.xml">
-      <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmailUtilTest_sendMail - 2019.11.14 at 14h 35m 37s.xml">
-      <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmailUtilTest_sendMail - 2019.11.14 at 14h 42m 00s.xml">
-      <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmailUtilTest_sendMail - 2019.11.14 at 14h 51m 33s.xml">
-      <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmailUtilTest_sendMail - 2019.11.14 at 14h 51m 56s.xml">
-      <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmailUtilTest_sendMail - 2019.11.14 at 15h 01m 23s.xml">
-      <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EmailUtilTest_sendMail - 2019.11.14 at 15h 02m 46s.xml">
-      <configuration name="EmailUtilTest.sendMail" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="测试测试测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试测试测试" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="818" y="218" key="FileChooserDialogImpl" timestamp="1581848627322">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1585636529239">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1585636529239" />
+    <state x="360" y="11" key="CommitChangelistDialog2" timestamp="1585636997496">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="360" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585636997496" />
+    <state x="654" y="173" key="FileChooserDialogImpl" timestamp="1585551580763">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="818" y="218" key="FileChooserDialogImpl/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1581848627322" />
-    <state x="654" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578906713082" />
-    <state width="1493" height="268" key="GridCell.Tab.0.bottom" timestamp="1585277631359">
+    <state x="654" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585551580763" />
+    <state width="1493" height="268" key="GridCell.Tab.0.bottom" timestamp="1585279160719">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
-    <state width="1493" height="268" key="GridCell.Tab.0.center" timestamp="1585277631359">
+    <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
+    <state width="1493" height="268" key="GridCell.Tab.0.center" timestamp="1585279160719">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
-    <state width="1493" height="268" key="GridCell.Tab.0.left" timestamp="1585277631359">
+    <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
+    <state width="1493" height="268" key="GridCell.Tab.0.left" timestamp="1585279160719">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
-    <state width="1493" height="268" key="GridCell.Tab.0.right" timestamp="1585277631359">
+    <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
+    <state width="1493" height="268" key="GridCell.Tab.0.right" timestamp="1585279160719">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585277631359" />
-    <state width="1493" height="268" key="GridCell.Tab.1.bottom" timestamp="1585277631360">
+    <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
+    <state width="1493" height="268" key="GridCell.Tab.1.bottom" timestamp="1585279160720">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
-    <state width="1493" height="268" key="GridCell.Tab.1.center" timestamp="1585277631360">
+    <state width="1493" height="268" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585279160720" />
+    <state width="1493" height="268" key="GridCell.Tab.1.center" timestamp="1585279160720">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
-    <state width="1493" height="268" key="GridCell.Tab.1.left" timestamp="1585277631360">
+    <state width="1493" height="268" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1585279160720" />
+    <state width="1493" height="268" key="GridCell.Tab.1.left" timestamp="1585279160719">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
-    <state width="1493" height="268" key="GridCell.Tab.1.right" timestamp="1585277631360">
+    <state width="1493" height="268" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
+    <state width="1493" height="268" key="GridCell.Tab.1.right" timestamp="1585279160720">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1585277631360" />
+    <state width="1493" height="268" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1585279160720" />
     <state width="1493" height="237" key="GridCell.Tab.2.bottom" timestamp="1585277286372">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -421,15 +400,19 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="0" width="1207" height="834" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585215656974" />
-    <state x="449" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1585271636828">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="561" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1585467454190">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="561" y="305" key="com.intellij.ide.util.TipDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1581848568780" />
+    <state x="561" y="305" key="com.intellij.ide.util.TipDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585467454190" />
     <state x="449" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1585271636828" />
-    <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578900144088">
+    <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585636973370">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1578900144088" />
+    <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1585636973370" />
+    <state x="178" y="27" key="new project wizard" timestamp="1585551598124">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="178" y="27" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1585551598124" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585274649340">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

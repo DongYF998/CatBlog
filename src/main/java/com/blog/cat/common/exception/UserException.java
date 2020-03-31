@@ -1,6 +1,9 @@
 package com.blog.cat.common.exception;
 
 
+/**
+ * @author yangyang
+ */
 public class UserException extends Exception implements CommonException {
 
     private CommonException commonException;
@@ -19,7 +22,6 @@ public class UserException extends Exception implements CommonException {
     public void setCommonException(CommonException commonException) {
         this.commonException = commonException;
     }
-
 
     @Override
     public int getExceptionCode() {

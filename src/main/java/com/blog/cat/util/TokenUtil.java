@@ -8,6 +8,8 @@ import com.blog.cat.common.exception.CommonExceptionEnum;
 import com.blog.cat.common.exception.UserException;
 import com.blog.cat.dao.UserDao;
 import com.blog.cat.entity.User;
+import com.blog.cat.service.RedisService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -19,6 +21,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TokenUtil {
+
+    private RedisService redisService;
 
     /**
      * 获得用户token
@@ -50,17 +54,22 @@ public class TokenUtil {
 
     public boolean handlerToken(String token, UserDao userDao, RedisUtil redisUtil) throws Exception {
         // 检查token是否为空
-        if(token==null||token.equals(""))
+        if(token==null||token.equals("")) {
             throw new UserException(CommonExceptionEnum.TOKEN_EMPTY);
+        }
 
         //解析token获得uid
         String uid = getUid(token);
-        if(userDao.isUidExist(uid) == 0)
+        if(userDao.isUidExist(uid) == 0) {
             throw new UserException(CommonExceptionEnum.TOKEN_ILLEGAL);
+        }
+
+        String TOKEN_STR = "token";
 
         //检查Redis缓存是否有该token
-        if(redisUtil.getKey("token",uid) == null || !redisUtil.getKey("token",uid).equals(token))
+        if(redisService.getKey(TOKEN_STR,uid) == null || !redisService.getKey(TOKEN_STR,uid).equals(token)) {
             throw new UserException(CommonExceptionEnum.TOKEN_TIMEOUT);
+        }
 
         User user = userDao.getUser(uid);
 
@@ -72,8 +81,12 @@ public class TokenUtil {
             throw new UserException(CommonExceptionEnum.TOKEN_ILLEGAL);
         }
         //重新设置验证有效时间
-        redisUtil.setRedisWithTimeOut("token",uid,token,1000*60*60*2);
+        redisService.setToken(uid, token, 1000*60*60*2);
         return true;
+    }
 
+    @Autowired
+    public void setRedisService(RedisService redisService) {
+        this.redisService = redisService;
     }
 }
