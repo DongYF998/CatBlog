@@ -20,6 +20,7 @@ public class BaseController {
     @ResponseBody
     public Object handlerException(HttpServletRequest request, Exception e) {
         CommonReturnType commonReturnType = new CommonReturnType();
+        e.printStackTrace();
         if (e instanceof UserException) {
             //强制转化捕获的错误为UserException
             UserException userException = (UserException) e;

@@ -1,5 +1,9 @@
 package com.blog.cat.common.exception;
 
+/**
+ * @author admin
+ */
+
 public enum CommonExceptionEnum implements CommonException {
     USERNAME_EXIST(101,"用户名已存在"),
     USERNAME_NOT_EXIST(102,"用户名不存在"),
@@ -12,7 +16,7 @@ public enum CommonExceptionEnum implements CommonException {
     USER_NAME_NOT_ILL(109,"格式错误"),
     PHONE_EXIST(110,"手机号已存在"),
 
-    TOKEN_EMPTY(301,"令牌为空"),
+    TOKEN_EMPTY(301,"登录过期"),
     TOKEN_ILLEGAL(302,"非法令牌"),
     TOKEN_TIMEOUT(303,"令牌失效"),
 
@@ -25,14 +29,11 @@ public enum CommonExceptionEnum implements CommonException {
     private int exceptionCode;
     private String exceptionMsg;
 
-
-    /* Constructor */
     CommonExceptionEnum(int exceptionCode, String exceptionMsg) {
         this.exceptionCode = exceptionCode;
         this.exceptionMsg = exceptionMsg;
     }
 
-    /* Override */
     @Override
     public int getExceptionCode() {
         return this.exceptionCode;

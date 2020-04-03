@@ -48,8 +48,10 @@ public class HttpAspect {
             params = request.getQueryString();
         }else {
             params+="[";
-            for (Object item: o){
-                params += item.toString()+" ";
+            if (o != null || o.length > 0){
+                for (Object item: o){
+                    params += item.toString()+" ";
+                }
             }
             params+="]";
         }

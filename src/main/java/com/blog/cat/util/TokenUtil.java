@@ -52,9 +52,9 @@ public class TokenUtil {
         }
     }
 
-    public boolean handlerToken(String token, UserDao userDao, RedisUtil redisUtil) throws Exception {
+    public boolean handlerToken(String token, UserDao userDao) throws Exception {
         // 检查token是否为空
-        if(token==null||token.equals("")) {
+        if(token==null||"".equals(token)) {
             throw new UserException(CommonExceptionEnum.TOKEN_EMPTY);
         }
 

@@ -10,8 +10,6 @@ import com.blog.cat.dao.UserDao;
 import com.blog.cat.entity.User;
 import com.blog.cat.service.RedisService;
 import com.blog.cat.service.UserService;
-import com.blog.cat.util.EmailUtil;
-import com.blog.cat.util.RedisUtil;
 import com.blog.cat.util.TokenUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -27,6 +26,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
+/**
+ * @author admin
+ */
 @RestController
 @RequestMapping("/api/account")
 @CrossOrigin
@@ -40,9 +42,6 @@ public class UserController extends BaseController {
 
     private TokenUtil tokenUtil;
 
-    private RedisUtil redisUtil;
-
-    private EmailUtil emailUtil;
 
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
 
@@ -60,7 +59,6 @@ public class UserController extends BaseController {
     public CommonReturnType login(@RequestBody User user) throws Exception {
         User result = userService.login(user.getUid(), user.getPwd());
         String token = tokenUtil.getToken(user);
-//        redisUtil.setRedisWithTimeOut("token", result.getUid(), token, 1000 * 60 * 60 * 3);
         redisService.setToken(result.getUid(), token, 1000 * 60 * 60 * 3);
         Map<String, String> reData = new HashMap<>(2);
         reData.put("token", token);
@@ -136,7 +134,6 @@ public class UserController extends BaseController {
             return new CommonReturnType(999, "fail", "邮箱格式错误");
         }
         userService.isEmailExist(email);
-
         return new CommonReturnType("可以使用");
     }
 
@@ -156,15 +153,8 @@ public class UserController extends BaseController {
     public CommonReturnType getEmailVerifyCode(@RequestParam String email) throws UserException {
         Random r = new Random();
         int random = r.nextInt(999999);
-        logger.info(email);
         String verifyCode = random > 100000 ? String.valueOf(random) : String.valueOf(random + 100000);
-        redisService.setEmailVerify(email, verifyCode, 1000*60*15);
-        try {
-            emailUtil.sendMail(email, verifyCode);
-        } catch (Exception e) {
-            redisUtil.deleteKey("email", email);
-            throw new UserException(CommonExceptionEnum.SEND_VERIFY_MAIL_FAIL);
-        }
+        redisService.setEmailVerify(email, verifyCode,  1000*60*15);
         return new CommonReturnType("发送成功");
     }
 
@@ -172,14 +162,16 @@ public class UserController extends BaseController {
     @PassToken
     @GetMapping("/isTokenLegal")
     public CommonReturnType isTokenLegal(@RequestParam String token) throws Exception {
-        tokenUtil.handlerToken(token,userDao,redisUtil);
+        tokenUtil.handlerToken(token,userDao);
         return new CommonReturnType("验证通过");
     }
 
 
     @NormalToken
     @PostMapping("/uploadHeadPic")
-    public CommonReturnType uploadHeadPic(@RequestBody MultipartFile file){
+    public CommonReturnType uploadHeadPic(@RequestParam("headPic") MultipartFile picture, HttpServletRequest request) throws UserException {
+        String uid = tokenUtil.getUid(request.getHeader("token"));
+
         return new CommonReturnType("上传成功");
     }
 
@@ -206,16 +198,6 @@ public class UserController extends BaseController {
     @Autowired
     public void setTokenUtil(TokenUtil tokenUtil) {
         this.tokenUtil = tokenUtil;
-    }
-
-    @Autowired
-    public void setRedisUtil(RedisUtil redisUtil) {
-        this.redisUtil = redisUtil;
-    }
-
-    @Autowired
-    public void setEmailUtil(EmailUtil emailUtil) {
-        this.emailUtil = emailUtil;
     }
 
     @Autowired

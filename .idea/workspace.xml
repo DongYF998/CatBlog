@@ -4,18 +4,27 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4216d4-ea61-4e17-858d-ad4427d84872" name="Default Changelist" comment="测试测试测试">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/RedisServiceImpl.java" afterDir="false" />
+    <list default="true" id="7f4216d4-ea61-4e17-858d-ad4427d84872" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/UserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/aspect/HttpAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/CommonExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/common/exception/CommonExceptionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/config/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/intercepter/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/RedisUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/util/TokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/common/exception/UserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/common/exception/UserException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/aspect/HttpAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/aspect/HttpAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/common/exception/CommonExceptionEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/common/exception/CommonExceptionEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/config/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/config/InterceptorConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/intercepter/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/intercepter/AuthInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/util/RedisUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/blog/cat/util/TokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/blog/cat/util/TokenUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +125,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -315,7 +324,13 @@
       <workItem from="1585271633141" duration="18573000" />
       <workItem from="1585467445675" duration="2329000" />
       <workItem from="1585551170230" duration="472000" />
-      <workItem from="1585635782595" duration="1253000" />
+      <workItem from="1585635782595" duration="3582000" />
+      <workItem from="1585705788310" duration="350000" />
+      <workItem from="1585725147737" duration="961000" />
+      <workItem from="1585826999416" duration="4159000" />
+      <workItem from="1585878092751" duration="127000" />
+      <workItem from="1585903026121" duration="250000" />
+      <workItem from="1585903791704" duration="980000" />
     </task>
     <task id="LOCAL-00001" summary="测试测试测试">
       <created>1585279157481</created>
@@ -324,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585279157481</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试测试测试">
+      <created>1585637045355</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585637045355</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,51 +357,59 @@
     <option name="LAST_COMMIT_MESSAGE" value="测试测试测试" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1585636529239">
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1585904726054">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1585636529239" />
-    <state x="360" y="11" key="CommitChangelistDialog2" timestamp="1585636997496">
+    <state x="574" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1585904726054" />
+    <state x="360" y="11" key="CommitChangelistDialog2" timestamp="1585637044013">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="360" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585636997496" />
+    <state x="360" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585637044013" />
     <state x="654" y="173" key="FileChooserDialogImpl" timestamp="1585551580763">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="818" y="218" key="FileChooserDialogImpl/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1581848627322" />
     <state x="654" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585551580763" />
-    <state width="1493" height="268" key="GridCell.Tab.0.bottom" timestamp="1585279160719">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
-    <state width="1493" height="268" key="GridCell.Tab.0.center" timestamp="1585279160719">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
+    <state width="1877" height="189" key="GridCell.Tab.0.center" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
-    <state width="1493" height="268" key="GridCell.Tab.0.left" timestamp="1585279160719">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.0.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
+    <state width="1877" height="189" key="GridCell.Tab.0.left" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
-    <state width="1493" height="268" key="GridCell.Tab.0.right" timestamp="1585279160719">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.0.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
+    <state width="1877" height="189" key="GridCell.Tab.0.right" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
-    <state width="1493" height="268" key="GridCell.Tab.1.bottom" timestamp="1585279160720">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.0.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
+    <state width="1877" height="189" key="GridCell.Tab.1.bottom" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585279160720" />
-    <state width="1493" height="268" key="GridCell.Tab.1.center" timestamp="1585279160720">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.1.bottom/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
+    <state width="1877" height="189" key="GridCell.Tab.1.center" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1585279160720" />
-    <state width="1493" height="268" key="GridCell.Tab.1.left" timestamp="1585279160719">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.1.center/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
+    <state width="1877" height="189" key="GridCell.Tab.1.left" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1585279160719" />
-    <state width="1493" height="268" key="GridCell.Tab.1.right" timestamp="1585279160720">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1877" height="189" key="GridCell.Tab.1.left/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
+    <state width="1877" height="189" key="GridCell.Tab.1.right" timestamp="1585832636735">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1585279160720" />
+    <state width="1877" height="189" key="GridCell.Tab.1.right/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585832636735" />
+    <state width="1493" height="194" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1585640439941" />
     <state width="1493" height="237" key="GridCell.Tab.2.bottom" timestamp="1585277286372">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -396,23 +426,23 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="237" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1585277286371" />
-    <state x="270" y="0" width="1207" height="834" key="SettingsEditor" timestamp="1585215656974">
+    <state x="270" y="0" width="1207" height="834" key="SettingsEditor" timestamp="1585904626045">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="0" width="1207" height="834" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585215656974" />
-    <state x="561" y="305" key="com.intellij.ide.util.TipDialog" timestamp="1585467454190">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="270" y="0" width="1207" height="834" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585904626045" />
+    <state x="449" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1585903878632">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="561" y="305" key="com.intellij.ide.util.TipDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585467454190" />
-    <state x="449" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1585271636828" />
+    <state x="561" y="305" key="com.intellij.ide.util.TipDialog/-1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1585827343587" />
+    <state x="449" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1585903878632" />
     <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585636973370">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="562" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1585636973370" />
-    <state x="178" y="27" key="new project wizard" timestamp="1585551598124">
+    <state x="178" y="27" key="new project wizard" timestamp="1585705828240">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="178" y="27" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1585551598124" />
+    <state x="178" y="27" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1585705828240" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1585274649340">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

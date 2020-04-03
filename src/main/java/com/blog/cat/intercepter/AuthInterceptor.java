@@ -1,16 +1,9 @@
 package com.blog.cat.intercepter;
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.JWTVerifier;
-import com.auth0.jwt.algorithms.Algorithm;
-import com.auth0.jwt.exceptions.JWTVerificationException;
+
 import com.blog.cat.annotation.NormalToken;
 import com.blog.cat.annotation.PassToken;
-import com.blog.cat.common.exception.CommonExceptionEnum;
-import com.blog.cat.common.exception.UserException;
 import com.blog.cat.dao.UserDao;
-import com.blog.cat.entity.User;
-import com.blog.cat.util.RedisUtil;
 import com.blog.cat.util.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
@@ -22,15 +15,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
 
+/**
+ * @author admin
+ */
 public class AuthInterceptor implements HandlerInterceptor {
     @Autowired
     private UserDao userDao;
 
     @Autowired
     private TokenUtil tokenUtil;
-
-    @Autowired
-    private RedisUtil redisUtil;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -56,7 +49,12 @@ public class AuthInterceptor implements HandlerInterceptor {
             NormalToken normalToken = method.getAnnotation(NormalToken.class);
             if (normalToken.required()){
                 //处理token
-                return tokenUtil.handlerToken(token,userDao,redisUtil);
+                boolean handleFlag = tokenUtil.handlerToken(token,userDao);
+                if(handleFlag){
+
+                }
+                return handleFlag;
+
             }
         }
         return false;
