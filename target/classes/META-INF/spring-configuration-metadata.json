@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "file.path",
+      "type": "com.blog.cat.bean.FilePathBean",
+      "sourceType": "com.blog.cat.bean.FilePathBean"
+    }
+  ],
+  "properties": [
+    {
+      "name": "file.path.default-head",
+      "type": "java.lang.String",
+      "sourceType": "com.blog.cat.bean.FilePathBean"
+    },
+    {
+      "name": "file.path.head-pic-base",
+      "type": "java.lang.String",
+      "sourceType": "com.blog.cat.bean.FilePathBean"
+    }
+  ],
+  "hints": []
+}

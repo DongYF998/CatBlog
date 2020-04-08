@@ -2,12 +2,14 @@ package com.blog.cat.controller;
 
 import com.blog.cat.annotation.NormalToken;
 import com.blog.cat.annotation.PassToken;
+import com.blog.cat.bean.FilePathBean;
 import com.blog.cat.common.exception.CommonExceptionEnum;
 import com.blog.cat.common.exception.UserException;
 import com.blog.cat.common.type.CommonReturnType;
 import com.blog.cat.controller.view.UserView;
 import com.blog.cat.dao.UserDao;
 import com.blog.cat.entity.User;
+import com.blog.cat.service.FileService;
 import com.blog.cat.service.RedisService;
 import com.blog.cat.service.UserService;
 import com.blog.cat.util.TokenUtil;
@@ -15,10 +17,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -30,7 +35,7 @@ import java.util.regex.Pattern;
  * @author admin
  */
 @RestController
-@RequestMapping("/api/account")
+@RequestMapping("/api/user")
 @CrossOrigin
 public class UserController extends BaseController {
 
@@ -38,10 +43,11 @@ public class UserController extends BaseController {
 
     private RedisService redisService;
 
+    private FileService fileService;
+
     private UserDao userDao;
 
     private TokenUtil tokenUtil;
-
 
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
 
@@ -107,7 +113,6 @@ public class UserController extends BaseController {
         if (!matcher.find()) {
             return new CommonReturnType(999, "fail", "密码格式有错");
         }
-
         return new CommonReturnType("密码可以正确使用");
     }
 
@@ -169,10 +174,20 @@ public class UserController extends BaseController {
 
     @NormalToken
     @PostMapping("/uploadHeadPic")
-    public CommonReturnType uploadHeadPic(@RequestParam("headPic") MultipartFile picture, HttpServletRequest request) throws UserException {
-        String uid = tokenUtil.getUid(request.getHeader("token"));
+    public CommonReturnType uploadHeadPic(@RequestParam("headPic") MultipartFile picture, HttpServletRequest request) throws UserException, IOException {
+        String token = request.getHeader("token");
+        String uid = tokenUtil.getUid(token);
+        fileService.saveHaeadPic(picture, uid);
+        return new CommonReturnType(fileService.getHeadPicUrl(uid));
+    }
 
-        return new CommonReturnType("上传成功");
+    @NormalToken
+    @GetMapping("/getHeadPic")
+    public CommonReturnType getHeadPid(HttpServletRequest request) throws UserException {
+        String token = request.getHeader("token");
+        String uid = tokenUtil.getUid(token);
+        String headPicPath = fileService.getHeadPicUrl(uid);
+        return new CommonReturnType(headPicPath);
     }
 
 
@@ -191,6 +206,11 @@ public class UserController extends BaseController {
     }
 
     @Autowired
+    public void setFileService(FileService fileService) {
+        this.fileService = fileService;
+    }
+
+    @Autowired
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
@@ -204,4 +224,5 @@ public class UserController extends BaseController {
     public void setRedisService(RedisService redisService) {
         this.redisService = redisService;
     }
+
 }

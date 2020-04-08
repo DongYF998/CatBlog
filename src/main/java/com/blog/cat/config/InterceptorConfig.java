@@ -15,6 +15,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        //配置拦截器
         registry.addInterceptor(authInterceptor())
                 .addPathPatterns("/**")
                 .excludePathPatterns("/static/**");
@@ -23,6 +24,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        //配置文件路径 /file 映射到 D:/CatBlog
+        registry.addResourceHandler("/file/**").addResourceLocations("file:D:/CatBlog/");
     }
 
     @Bean

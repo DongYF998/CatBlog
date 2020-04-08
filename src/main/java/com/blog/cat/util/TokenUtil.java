@@ -54,7 +54,7 @@ public class TokenUtil {
 
     public boolean handlerToken(String token, UserDao userDao) throws Exception {
         // 检查token是否为空
-        if(token==null||"".equals(token)) {
+        if(token== null ||"".equals(token)) {
             throw new UserException(CommonExceptionEnum.TOKEN_EMPTY);
         }
 
@@ -81,7 +81,7 @@ public class TokenUtil {
             throw new UserException(CommonExceptionEnum.TOKEN_ILLEGAL);
         }
         //重新设置验证有效时间
-        redisService.setToken(uid, token, 1000*60*60*2);
+        redisService.setToken(uid, token, 1000*60*60*3);
         return true;
     }
 

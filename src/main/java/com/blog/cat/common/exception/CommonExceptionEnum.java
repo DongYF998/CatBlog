@@ -23,6 +23,8 @@ public enum CommonExceptionEnum implements CommonException {
     REDIS_SERVER_ERR(701,"REDIS 服务异常"),
     SEND_VERIFY_MAIL_FAIL(702,"发送邮件失败"),
 
+    UPLOAD_HEAD_PIC_FAIL(701, "上传头像失败"),
+
     DECODE_FAIL(901,"解码错误");
 
 
