@@ -5,10 +5,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+/**
+ * @author yangyang
+ */
 
 @SpringBootApplication
 @MapperScan(basePackages = {"com.blog.cat.dao"}, annotationClass = Repository.class)
 @EnableConfigurationProperties
+@EnableTransactionManagement
 public class CatApplication {
 
     public static void main(String[] args) {

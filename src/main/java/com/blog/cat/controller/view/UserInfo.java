@@ -1,23 +1,26 @@
-package com.blog.cat.entity;
+package com.blog.cat.controller.view;
 
 import lombok.Data;
 
 import java.util.Date;
 
 /**
- * @author yangyang
+ * @Description:
+ * @Date: 2020/4/8
+ * @Author: DongYiFan
  */
+
 @Data
-public class User {
+public class UserInfo {
     private String uid;
-    private String pwd;
     private long phone;
     private String email;
     private String nickname;
-    private int gender;
     private Date birth;
     private int level;
+    private int gender;
     private int role;
     private String info;
     private String profession;
+    private String birthStr;
 }

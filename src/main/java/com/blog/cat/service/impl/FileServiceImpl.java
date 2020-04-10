@@ -29,11 +29,12 @@ public class FileServiceImpl implements FileService {
         String basePath = fpb.getHeadPicBase();
         String picPath = basePath + "/" + uid + "-head";
         File file = new File(picPath);
-        if(!file.exists()){
-            if(!file.mkdir()){
+        if(!file.exists()) {
+            if (!file.mkdir()) {
                 throw new UserException(CommonExceptionEnum.UPLOAD_HEAD_PIC_FAIL);
             }
         }
+
         File destPaht = new File(picPath +"/"+uid + "-head.jpg");
         pic.transferTo(destPaht);
         return true;

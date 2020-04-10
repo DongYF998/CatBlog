@@ -15,6 +15,7 @@ public enum CommonExceptionEnum implements CommonException {
     EMAIL_CODE_ERR(108,"邮箱验证码错误或失效"),
     USER_NAME_NOT_ILL(109,"格式错误"),
     PHONE_EXIST(110,"手机号已存在"),
+    EMAIL_NULL(111,"邮箱为空"),
 
     TOKEN_EMPTY(301,"登录过期"),
     TOKEN_ILLEGAL(302,"非法令牌"),

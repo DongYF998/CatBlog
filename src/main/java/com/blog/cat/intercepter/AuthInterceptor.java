@@ -27,7 +27,7 @@ public class AuthInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String token = request.getHeader("Authorization");
+        String token = request.getHeader("token");
         //非映射方法直接通过
         if(! (handler instanceof HandlerMethod)){
             return true;

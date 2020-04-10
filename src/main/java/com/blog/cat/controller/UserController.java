@@ -3,9 +3,11 @@ package com.blog.cat.controller;
 import com.blog.cat.annotation.NormalToken;
 import com.blog.cat.annotation.PassToken;
 import com.blog.cat.bean.FilePathBean;
+import com.blog.cat.common.exception.CommonException;
 import com.blog.cat.common.exception.CommonExceptionEnum;
 import com.blog.cat.common.exception.UserException;
 import com.blog.cat.common.type.CommonReturnType;
+import com.blog.cat.controller.view.UserInfo;
 import com.blog.cat.controller.view.UserView;
 import com.blog.cat.dao.UserDao;
 import com.blog.cat.entity.User;
@@ -159,7 +161,11 @@ public class UserController extends BaseController {
         Random r = new Random();
         int random = r.nextInt(999999);
         String verifyCode = random > 100000 ? String.valueOf(random) : String.valueOf(random + 100000);
-        redisService.setEmailVerify(email, verifyCode,  1000*60*15);
+        try {
+            redisService.setEmailVerify(email, verifyCode,  1000*60*15);
+        }catch (Exception e){
+            throw  e;
+        }
         return new CommonReturnType("发送成功");
     }
 
@@ -174,22 +180,74 @@ public class UserController extends BaseController {
 
     @NormalToken
     @PostMapping("/uploadHeadPic")
-    public CommonReturnType uploadHeadPic(@RequestParam("headPic") MultipartFile picture, HttpServletRequest request) throws UserException, IOException {
+    public CommonReturnType uploadHeadPic(@RequestParam("headPic") MultipartFile picture, HttpServletRequest request) throws Exception {
         String token = request.getHeader("token");
         String uid = tokenUtil.getUid(token);
-        fileService.saveHaeadPic(picture, uid);
-        return new CommonReturnType(fileService.getHeadPicUrl(uid));
+        userService.updateHeadPic(picture, uid);
+        return new CommonReturnType("上传成功");
     }
 
     @NormalToken
     @GetMapping("/getHeadPic")
-    public CommonReturnType getHeadPid(HttpServletRequest request) throws UserException {
+    public CommonReturnType getHeadPid(HttpServletRequest request) throws Exception {
         String token = request.getHeader("token");
         String uid = tokenUtil.getUid(token);
-        String headPicPath = fileService.getHeadPicUrl(uid);
+        String headPicPath = userService.getHeadPic(uid);
         return new CommonReturnType(headPicPath);
     }
 
+    @NormalToken
+    @GetMapping("/getUserInfo")
+    public CommonReturnType getUserInfo(HttpServletRequest request) throws UserException {
+        String token = request.getHeader("token");
+        String uid = tokenUtil.getUid(token);
+        UserInfo userInfo = userService.getUserInfo(uid);
+        return new CommonReturnType(userInfo);
+    }
+
+    @NormalToken
+    @PostMapping("/updateUserInfo")
+    public CommonReturnType upadteUserInfo(@RequestBody  UserInfo userInfo, HttpServletRequest request) throws Exception{
+        String token = request.getHeader("token");
+        String uid = tokenUtil.getUid(token);
+        userInfo.setUid(uid);
+        userService.updateUserInfo(userInfo);
+        return new CommonReturnType("修改成功");
+    }
+
+    @NormalToken
+    @GetMapping("/getEmail")
+    public CommonReturnType getEmail(HttpServletRequest request) throws Exception {
+        String token = request.getHeader("token");
+        String uid = tokenUtil.getUid(token);
+        String email = userService.getEmail(uid);
+        return new CommonReturnType(email);
+    }
+
+    @NormalToken
+    @PostMapping("/updatePwd")
+    public CommonReturnType updatePwd(@RequestBody  Map<String, String> param, HttpServletRequest request) throws Exception{
+        System.out.println("");
+        String token = request.getHeader("token");
+        String uid = tokenUtil.getUid(token);
+        String email = param.get("email");
+
+        if(email == null || "".equals(email)){
+            throw new UserException(CommonExceptionEnum.EMAIL_NULL);
+        }
+
+        String verifyCode =  redisService.getKey("email",email);
+        String verify = param.get("verify");
+        String pwd = param.get("pwd");
+        if( verify == null || "".equals(verify) || !verify.equals(verifyCode)){
+            throw new UserException(CommonExceptionEnum.EMAIL_CODE_ERR);
+        }
+        if(pwd == null || "".equals(pwd)){
+            throw new UserException(CommonExceptionEnum.PASSWORD_EMPTY);
+        }
+        userService.updatePwd(pwd,uid);
+        return new CommonReturnType("修改成功");
+    }
 
     public User userViewToUser(UserView src) {
         if (src == null) {

@@ -2,8 +2,9 @@ package com.blog.cat.controller.view;
 
 import lombok.Data;
 
-import java.util.Date;
-
+/**
+ * @author yangyang
+ */
 @Data
 public class UserView {
     private String uid;

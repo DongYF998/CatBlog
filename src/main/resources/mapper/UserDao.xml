@@ -26,4 +26,32 @@
         insert into user(uid,pwd,email,nickname)values
             (#{uid},#{pwd},#{email},#{nickname})
     </insert>
+
+    <update id="updateHeadPic" parameterType="String" timeout="2000">
+        update user set head = #{head} where uid = #{uid}
+    </update>
+
+    <select id="getHeadUrl" parameterType="String" timeout="2000" resultType="String">
+        select head from user where uid = #{uid}
+    </select>
+
+    <update id="updateUserInfo" parameterType="com.blog.cat.controller.view.UserInfo" timeout="2000">
+        update user set
+            nickname = #{nickname},
+            gender = #{gender},
+            birth = #{birth},
+            profession = #{profession},
+            info = #{info}
+        where uid = #{uid}
+    </update>
+
+    <select id="getEmail" parameterType="String" timeout="2000" resultType="String">
+        select email from user where uid = #{uid}
+    </select>
+
+    <update id="updatePwd" parameterType="String" timeout="2000">
+        update user set
+            pwd = #{pwd}
+        where uid = #{uid}
+    </update>
 </mapper>

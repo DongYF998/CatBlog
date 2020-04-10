@@ -65,7 +65,7 @@ public class RedisServiceImpl implements RedisService {
 
     @Override
     public String getKey(String flag, String key) throws Exception {
-        String val= srt.opsForValue().get( flag+":"+key);
+        String val= srt.opsForValue().get(flag+":"+key);
         return val == null? "": val;
     }
 
