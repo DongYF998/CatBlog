@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4216d4-ea61-4e17-858d-ad4427d84872" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_8_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CatBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CatBlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/blog/cat/controller/AccountController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +48,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JRebelWorkspace">
@@ -99,7 +96,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -323,7 +320,7 @@
       <workItem from="1586394557195" duration="14490000" />
       <workItem from="1586481424202" duration="12603000" />
       <workItem from="1586508935393" duration="1474000" />
-      <workItem from="1586746761922" duration="627000" />
+      <workItem from="1586746761922" duration="882000" />
     </task>
     <task id="LOCAL-00001" summary="测试测试测试">
       <created>1585279157481</created>
@@ -360,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586508675687</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="在做了在做了">
+      <created>1586747527702</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586747527702</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,10 +403,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="418" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1586415163249" />
-    <state x="360" y="11" key="CommitChangelistDialog2" timestamp="1586508673767">
+    <state x="403" y="22" key="CommitChangelistDialog2" timestamp="1586747526409">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="360" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586508673767" />
+    <state x="403" y="22" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586747526409" />
     <state x="654" y="173" key="FileChooserDialogImpl" timestamp="1585551580763">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -468,10 +472,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="349" y="80" key="Registry/0.0.1536.834@0.0.1536.834" timestamp="1586507816278" />
-    <state x="270" y="0" width="1207" height="834" key="SettingsEditor" timestamp="1586507846290">
+    <state x="270" y="0" width="1207" height="834" key="SettingsEditor" timestamp="1586747639537">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="0" width="1207" height="834" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586507846290" />
+    <state x="270" y="0" width="1207" height="834" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586747639537" />
+    <state x="361" y="139" key="Vcs.Push.Dialog.v2" timestamp="1586747530944">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="139" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586747530944" />
     <state x="449" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1586746941716">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
