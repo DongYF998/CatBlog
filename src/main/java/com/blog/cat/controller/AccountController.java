@@ -4,6 +4,7 @@ package com.blog.cat.controller;
 import com.blog.cat.common.exception.UserException;
 import com.blog.cat.service.UserService;
 import com.blog.cat.util.TokenUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,5 +32,16 @@ public class AccountController {
         String token = request.getHeader("token");
         String uid = tokenUtil.getUid(token);
 
+    }
+
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
+
+    @Autowired
+    public void setTokenUtil(TokenUtil tokenUtil) {
+        this.tokenUtil = tokenUtil;
     }
 }
